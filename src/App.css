@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.container{
+    background-color: #d7b38c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 5px rgba;
+    min-height: 100vh;
+}
+.container .itemWrapper{
+    min-height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #313131;
+    text-align: center;
+    margin: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .itemWrapper .header h1{
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container .itemWrapper .formItems .inputField{
+    border: none;
+    background-color: #999;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border-radius:10px;
+    width: 200px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container .itemWrapper .formItems .addButton{
+    background-color: #d7b38c;
+    color: white;
+    border: transparent;
+    border-radius:5px;
+    padding: 10px;
+    margin: 10px;
+    width: 70px;
 }
-
-.App-link {
-  color: #61dafb;
+.container .itemWrapper .formItems .addButton:hover{
+    background-color: #c8ad7f;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .itemWrapper .todolist{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.container .itemWrapper .todolist .todoList input{
+    border:none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.container .itemWrapper .todolist .todoList button{
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.container .itemWrapper .todolist .todoList .button-complete{
+    background-color: green;
+    color: white;
+}
+.container .itemWrapper .todolist .todoList .button-edit{
+    background-color: orange;
+    color: white;
+}
+.container .itemWrapper .todolist .todoList .button-delete{
+    background-color: red;
+    color: white;
 }
