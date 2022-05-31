@@ -13,6 +13,7 @@
     background-color: #313131;
     text-align: center;
     margin: 40px;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 
 .container .itemWrapper .header h1{
